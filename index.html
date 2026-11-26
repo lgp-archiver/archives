@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+  <title>Mon explorateur</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/player.css">
+</head>
+<body>
+  <main id="desktop"></main>
+  <footer id="taskbar">
+    <button id="home-btn" type="button">⌂ <span>Accueil</span></button>
+    <div id="tasks"></div>
+    <button id="mouse-toggle" type="button" data-direct aria-pressed="false">Souris</button>
+    <time id="clock"></time>
+  </footer>
+  <div id="cursor" hidden>
+    <svg viewBox="0 0 20 26" width="22" height="29"><path d="M2 2 L18 15 L11 16 L8 24 Z" fill="#fff" stroke="#111" stroke-width="1.8" stroke-linejoin="round"/></svg>
+  </div>
+  <noscript>Ce site a besoin de JavaScript.</noscript>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

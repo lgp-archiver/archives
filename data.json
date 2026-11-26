@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "rev": 1,
+  "settings": {
+    "title": "Mon explorateur",
+    "rootName": "Mon espace",
+    "theme": {
+      "accent": "#1f6f68",
+      "chrome": "#e6e3da",
+      "desktop": "#3d3552",
+      "folder": "#e4785a"
+    },
+    "player": {
+      "background": "#1d1b26",
+      "text": "#f4f1ea",
+      "accent": "#f2c14e",
+      "playlist": true,
+      "autoNext": true,
+      "loop": false,
+      "visualizer": false
+    },
+    "trackpad": {
+      "default": "auto",
+      "speed": 1.4
+    },
+    "admin": {
+      "salt": "c2VsLWRlLWRlbW8tMTIzNA==",
+      "hash": "EBqR/p3JDOyfu+N8sb8uA9QdhcFvs7Hodjz3dU2fK5o=",
+      "iterations": 150000
+    }
+  },
+  "root": {
+    "id": "root",
+    "type": "folder",
+    "name": "Mon espace",
+    "children": [
+      {
+        "id": "admin",
+        "type": "admin",
+        "name": "Administration"
+      },
+      {
+        "id": "f-musique",
+        "type": "folder",
+        "name": "Musique",
+        "children": [
+          {
+            "id": "a-demo",
+            "type": "audio",
+            "name": "Petite mélodie.wav",
+            "src": "media/demo-melodie.wav",
+            "artist": "Démo",
+            "cover": ""
+          }
+        ]
+      },
+      {
+        "id": "f-photos",
+        "type": "folder",
+        "name": "Photos",
+        "children": [
+          {
+            "id": "i-demo",
+            "type": "image",
+            "name": "Formes.svg",
+            "src": "media/demo-formes.svg",
+            "caption": "Formes",
+            "text": "Voici le texte affiché à côté de la photo.\n\nTu peux le modifier depuis l'administration.",
+            "textPosition": "right"
+          }
+        ]
+      },
+      {
+        "id": "t-bienvenue",
+        "type": "text",
+        "name": "Bienvenue.txt",
+        "content": "Bienvenue !\n\nDouble-clique sur un élément pour l'ouvrir.\nSur mobile : glisse pour déplacer le curseur, double tape pour ouvrir."
+      },
+      {
+        "id": "l-github",
+        "type": "link",
+        "name": "GitHub",
+        "url": "https://github.com",
+        "look": "folder",
+        "badge": true,
+        "newTab": true
+      }
+    ]
+  }
+}

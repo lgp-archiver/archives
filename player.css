@@ -1,0 +1,22 @@
+/* Habillage du lecteur audio : tout est ici, modifiable sans toucher au reste du site.
+   Les trois couleurs --pl-* sont réglables depuis l'administration. */
+.player{--pl-bg:#1d1b26;--pl-text:#f4f1ea;--pl-accent:#f2c14e;
+  flex:1;min-height:0;display:flex;flex-direction:column;gap:10px;padding:12px;background:var(--pl-bg);color:var(--pl-text);overflow:auto}
+.player-head{display:flex;gap:12px;align-items:center}
+.player-cover{width:72px;height:72px;flex:none;border-radius:6px;object-fit:cover;border:2px solid var(--pl-accent);display:grid;place-items:center;font-size:30px}
+.player-title{font-weight:bold;font-size:15px;overflow-wrap:anywhere}
+.player-artist{opacity:.7}
+.player-viz{width:100%;height:48px;flex:none}
+.player-slider{position:relative;height:20px;flex:1;cursor:pointer;touch-action:none}
+.player-slider::before{content:"";position:absolute;left:0;right:0;top:8px;height:4px;background:currentColor;opacity:.25;border-radius:2px}
+.player-slider i{position:absolute;left:0;top:8px;height:4px;background:var(--pl-accent);border-radius:2px}
+.player-slider b{position:absolute;top:3px;width:14px;height:14px;margin-left:-7px;border-radius:50%;background:var(--pl-accent)}
+.player-row{display:flex;gap:8px;align-items:center;flex:none}
+.player-controls{justify-content:center}
+.player button.pl{background:transparent;color:var(--pl-text);border:2px solid var(--pl-accent);border-radius:20px;min-width:44px;height:36px}
+.player button.pl[aria-pressed="true"],.player button.pl.main{background:var(--pl-accent);color:var(--pl-bg)}
+.player-volume{max-width:200px;align-self:center;width:100%}
+.player-list{list-style:none;margin:0;padding:0;border-top:1px solid rgba(255,255,255,.2)}
+.player-list li{padding:7px 6px;cursor:pointer;border-bottom:1px solid rgba(255,255,255,.1)}
+.player-list li.current{color:var(--pl-accent);font-weight:bold}
+.player-list li.vhover{background:rgba(255,255,255,.1)}
